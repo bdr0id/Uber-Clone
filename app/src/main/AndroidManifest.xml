@@ -12,18 +12,10 @@
         <activity
             android:name=".MobileActivity"
             android:exported="true" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MobileActivity">
-            </meta-data>
         </activity>
         <activity
             android:name=".StartedActivity"
             android:exported="true" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StartedActivity">
-            </meta-data>
         </activity>
         <activity
             android:name=".MainActivity"
