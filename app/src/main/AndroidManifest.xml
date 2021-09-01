@@ -14,14 +14,16 @@
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MobileActivity"/>
+                android:value=".MobileActivity">
+            </meta-data>
         </activity>
         <activity
             android:name=".StartedActivity"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StartedActivity"/>
+                android:value=".StartedActivity">
+            </meta-data>
         </activity>
         <activity
             android:name=".MainActivity"
