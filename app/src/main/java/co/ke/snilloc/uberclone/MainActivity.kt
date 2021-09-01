@@ -23,6 +23,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             //kill the activity
             finish()
-        },5000) //delayed for 5 seconds
+        },3500) //delayed for 3.5 seconds
     }
 }
