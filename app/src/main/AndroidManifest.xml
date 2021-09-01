@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UberClone">
         <activity
+            android:name=".SocialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".MobileActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".StartedActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
