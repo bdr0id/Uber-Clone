@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Uber Clone</string>
+    <string name="uber">Uber</string>
+    <string name="uber">Uber</string>
+    <string name="move_with_safety">Move with safety</string>
+    <string name="todo">TODO</string>
+    <string name="get_started">Get started</string>
+    <string name="choose_an_account">Choose an account</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="verification">By clicking on a social option you may receive an SMS for verification. Message and data rates may apply.</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>

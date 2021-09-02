@@ -11,20 +11,21 @@
         android:id="@+id/SocialChooseTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose an account"
-        android:layout_alignParentLeft="true"
+        android:text="@string/choose_an_account"
+        android:layout_alignParentStart="true"
         android:layout_marginTop="70dp"
         android:textSize="24sp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginStart="20dp"/>
 
     <ImageView
         android:id="@+id/SocialFacebookImageView"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/SocialChooseTextView"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/fb_icon"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/SocialFacebookTextView"
@@ -32,19 +33,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/SocialChooseTextView"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="55dp"
         android:layout_toEndOf="@+id/SocialFacebookImageView"
-        android:text="Facebook"
+        android:text="@string/facebook"
         android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/SocialGoogleImageView"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/SocialFacebookImageView"
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/google_icon"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/SocialGoogleTextView"
@@ -52,9 +54,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/SocialFacebookTextView"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="53dp"
         android:layout_toEndOf="@+id/SocialGoogleImageView"
-        android:text="Google"
+        android:text="@string/google"
         android:textSize="24sp" />
 
     <TextView
@@ -63,6 +65,6 @@
         android:layout_below="@+id/SocialGoogleImageView"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:text="By clicking on a social option you may receive an SMS for verification. Message and data rates may apply." />
+        android:text="@string/verification" />
 
 </RelativeLayout>

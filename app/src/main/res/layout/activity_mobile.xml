@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="70dp"
         android:text="Please enter your mobile number"
         android:textColor="@color/black"
@@ -24,28 +24,33 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileEnterTextView"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/MobileCountryCodeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/MobileSpinner"
         android:layout_below="@+id/MobileEnterTextView"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/MobileSpinner"
         android:text="+254"
-        android:textSize="26sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="26sp" />
 
     <EditText
         android:id="@+id/MobileNumberEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileEnterTextView"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_toRightOf="@+id/MobileCountryCodeTextView" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/MobileCountryCodeTextView"
+        android:autofillHints="hint"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/MobileSocialTextView"
@@ -65,8 +70,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="100dp"
-        android:text="By continuing you may receive an sms for verification. Message and data rates may apply"
-        android:textSize="16sp" />
+        android:text="By continuing you may receive an sms for verification. Message and data rates may apply" />
 
     <Button
         android:id="@+id/MobileNextButton"
