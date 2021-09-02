@@ -46,10 +46,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileEnterTextView"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_toEndOf="@+id/MobileCountryCodeTextView"
         android:autofillHints="hint"
+        android:hint="0712123456"
+        android:inputType="phone"
         android:minHeight="48dp"
+        android:textSize="26sp"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
@@ -61,7 +64,7 @@
         android:layout_marginTop="24dp"
         android:text="Or connect using social media"
         android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:textSize="19sp" />
 
     <TextView
         android:id="@+id/MobileVerificationTextView"
@@ -81,7 +84,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="30dp"
-        android:text="Next"
+        android:text="@string/next"
         android:textAllCaps="false"
         android:textSize="16sp" />
 
