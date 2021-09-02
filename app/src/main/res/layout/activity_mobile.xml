@@ -12,19 +12,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp"
-        android:layout_marginLeft="40dp"
         android:text="Please enter your mobile number"
         android:textColor="@color/black"
-        android:textSize="26sp" />
+        android:textSize="28sp" />
 
     <Spinner
         android:id="@+id/MobileSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
         android:layout_below="@+id/MobileEnterTextView"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:id="@+id/MobileCountryCodeTextView"
@@ -51,19 +51,22 @@
         android:id="@+id/MobileSocialTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
         android:layout_below="@+id/MobileSpinner"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="24dp"
         android:text="Or connect using social media"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="By continuing you may receive an sms -->
-<!--        for verification. Message and data rates may apply"-->
-<!--        />-->
+    <TextView
+        android:id="@+id/MobileVerificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="100dp"
+        android:text="By continuing you may receive an sms for verification. Message and data rates may apply"
+        android:textSize="16sp"/>
 
     <Button
         android:id="@+id/MobileNextButton"
