@@ -16,6 +16,6 @@
         android:fontFamily="sans-serif-medium"
         android:text="Uber"
         android:textColor="@color/white"
-        android:textSize="80sp"/>
+        android:textSize="80sp" />
 
 </RelativeLayout>
