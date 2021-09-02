@@ -1,6 +1,7 @@
 package co.ke.snilloc.uberclone
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,6 +19,7 @@ class MobileActivity : AppCompatActivity() {
             startActivity(intent)
         }
         val textView :TextView = findViewById(R.id.MobileSocialTextView)
+        textView.setTextColor(Color.parseColor("#0000FF"))
         textView.setOnClickListener {
             val intent = Intent(this, SocialActivity::class.java)
             startActivity(intent)
