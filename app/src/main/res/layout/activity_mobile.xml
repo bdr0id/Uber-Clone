@@ -11,7 +11,7 @@
         android:id="@+id/MobileEnterTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp"
         android:text="Please enter your mobile number"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileEnterTextView"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp" />
 
     <TextView
@@ -43,16 +43,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileEnterTextView"
-        android:layout_toRightOf="@+id/MobileCountryCodeTextView"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_toRightOf="@+id/MobileCountryCodeTextView" />
 
     <TextView
         android:id="@+id/MobileSocialTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MobileSpinner"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:text="Or connect using social media"
         android:textColor="@color/black"
@@ -63,10 +63,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="100dp"
         android:text="By continuing you may receive an sms for verification. Message and data rates may apply"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/MobileNextButton"
