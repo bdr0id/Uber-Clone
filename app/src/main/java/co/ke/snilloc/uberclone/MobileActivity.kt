@@ -14,15 +14,25 @@ class MobileActivity : AppCompatActivity() {
 
         //set onclick listener on the btn for next
         val button: Button = findViewById(R.id.MobileNextButton)
+        val userNumber : TextView = findViewById(R.id.MobileNumberEditText)
+
         button.setOnClickListener {
-            val intent = Intent(this, PasswordActivity::class.java)
-            startActivity(intent)
+            if (userNumber.text.isEmpty()){
+                userNumber.requestFocus()
+                userNumber.setError("Mobile number required")
+            }else{
+                val intent = Intent(this, PasswordActivity::class.java)
+                startActivity(intent)
+            }
         }
+
         val textView :TextView = findViewById(R.id.MobileSocialTextView)
         textView.setTextColor(Color.parseColor("#2d71e2"))
         textView.setOnClickListener {
             val intent = Intent(this, SocialActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
