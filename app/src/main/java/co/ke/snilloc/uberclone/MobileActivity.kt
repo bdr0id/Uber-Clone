@@ -19,7 +19,7 @@ class MobileActivity : AppCompatActivity() {
         button.setOnClickListener {
             if (userNumber.text.isEmpty()){
                 userNumber.requestFocus()
-                userNumber.setError("Mobile number required")
+                userNumber.setError("Please enter your mobile number")
             }else{
                 val intent = Intent(this, PasswordActivity::class.java)
                 startActivity(intent)
