@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SocialActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/SocialChooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_an_account"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/SocialFacebookImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SocialChooseTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/fb_icon"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/SocialFacebookTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SocialChooseTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/SocialFacebookImageView"
+        android:text="@string/facebook"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/SocialGoogleImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SocialFacebookImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/google_icon"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/SocialGoogleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SocialFacebookTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/SocialGoogleImageView"
+        android:text="@string/google"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SocialGoogleImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/verification" />
+
+</RelativeLayout>

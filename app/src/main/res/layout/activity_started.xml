@@ -13,29 +13,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80sp"
-        android:text="Uber"
-        android:textSize="40sp"
-        android:textColor="@color/white"/>
+        android:layout_marginTop="70sp"
+        android:text="@string/uber"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/StartedUberImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
+        android:layout_width="281dp"
+        android:layout_height="212dp"
         android:layout_below="@+id/StartedUberTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:src="@drawable/uber_icon"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/StartedUberImageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70sp"
-        android:text="Move with safety"
-        android:textSize="40sp"
-        android:textColor="@color/white"/>
+        android:layout_marginTop="60sp"
+        android:text="@string/move_with_safety"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/StartedUberButton"
@@ -46,7 +47,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="30dp"
-        android:text="Get started"
+        android:text="@string/get_started"
         android:textAllCaps="false"
         android:textSize="16sp" />
 

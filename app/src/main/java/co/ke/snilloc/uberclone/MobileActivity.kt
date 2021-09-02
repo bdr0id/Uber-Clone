@@ -19,7 +19,7 @@ class MobileActivity : AppCompatActivity() {
             startActivity(intent)
         }
         val textView :TextView = findViewById(R.id.MobileSocialTextView)
-        textView.setTextColor(Color.parseColor("#0000FF"))
+        textView.setTextColor(Color.parseColor("#2d71e2"))
         textView.setOnClickListener {
             val intent = Intent(this, SocialActivity::class.java)
             startActivity(intent)
