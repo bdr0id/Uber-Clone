@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UberClone">
         <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
             android:name=".SocialActivity"
             android:exported="true" />
         <activity
