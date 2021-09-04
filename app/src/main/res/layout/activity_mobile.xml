@@ -56,6 +56,18 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
+        android:id="@+id/MobileErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your mobile number"
+        android:textColor="#FF1100"
+        android:layout_below="@+id/MobileNumberEditText"
+        android:layout_toEndOf="@+id/MobileCountryCodeTextView"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"/>
+
+
+    <TextView
         android:id="@+id/MobileSocialTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
