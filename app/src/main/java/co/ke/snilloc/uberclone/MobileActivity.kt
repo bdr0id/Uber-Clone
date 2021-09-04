@@ -4,8 +4,10 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.view.isVisible
 
 class MobileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,13 +17,14 @@ class MobileActivity : AppCompatActivity() {
         //set onclick listener on the btn for next
         val button: Button = findViewById(R.id.MobileNextButton)
         val userNumber : TextView = findViewById(R.id.MobileNumberEditText)
+        val mobileError : TextView = findViewById(R.id.MobileErrorTextView)
 
         button.setOnClickListener {
             if (userNumber.text.isEmpty()){
                 userNumber.requestFocus()
-                userNumber.setError("Please enter your mobile number")
+                mobileError.visibility = View.VISIBLE
             }else{
-                val intent = Intent(this, PasswordActivity::class.java)
+                val intent = Intent(this, MobileVerifyActivity::class.java)
                 startActivity(intent)
             }
         }
