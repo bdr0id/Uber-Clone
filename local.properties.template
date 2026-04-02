@@ -1,0 +1,31 @@
+## This file is a template for local.properties
+## Copy this file to local.properties and replace the placeholder values with your actual API keys
+## local.properties should NEVER be committed to version control
+
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the header note.
+sdk.dir=/path/to/your/Android/Sdk
+
+# Google Maps API Key
+# Get your API key from: https://console.cloud.google.com/google/maps-apis/
+# 1. Go to Google Cloud Console
+# 2. Enable Maps SDK for Android
+# 3. Create credentials (API Key)
+# 4. Restrict the key to Android apps and add your package name
+MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+
+# Google OAuth Web Client ID
+# Get from: https://console.cloud.google.com/apis/credentials
+# 1. Go to Google Cloud Console
+# 2. Navigate to APIs & Services > Credentials
+# 3. Create OAuth 2.0 Client ID for Web application
+# 4. Copy the Client ID
+GOOGLE_WEB_CLIENT_ID=YOUR_GOOGLE_WEB_CLIENT_ID
+
+# Facebook App Configuration
+# Get from: https://developers.facebook.com/apps/
+# 1. Create a new Facebook app
+# 2. Go to Settings > Basic
+# 3. Copy App ID and generate Client Token
+FACEBOOK_APP_ID=YOUR_FACEBOOK_APP_ID
+FACEBOOK_CLIENT_TOKEN=YOUR_FACEBOOK_CLIENT_TOKEN

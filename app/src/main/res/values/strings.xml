@@ -9,5 +9,10 @@
     <string name="google">Google</string>
     <string name="verification">By clicking on a social option you may receive an SMS for verification. Message and data rates may apply.</string>
     <string name="next">Next</string>
-    <string name="default_web_client_id">738797781094-nkg5kvsoan7c62mmde16m84t5k0b66n0.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">${GOOGLE_WEB_CLIENT_ID}</string>
+    
+    <!-- Facebook Configuration -->
+    <string name="facebook_app_id">${FACEBOOK_APP_ID}</string>
+    <string name="facebook_client_token">${FACEBOOK_CLIENT_TOKEN}</string>
+    <string name="fb_login_protocol_scheme">fb${FACEBOOK_APP_ID}</string>
 </resources>

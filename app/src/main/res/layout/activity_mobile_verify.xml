@@ -28,7 +28,8 @@
         android:textSize="20sp" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/VerifyCountryCodeTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginTop="70dp"
@@ -71,10 +72,24 @@
         android:visibility="gone"/>
 
     <TextView
+        android:id="@+id/VerifyInstructionsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VerifyCodeErrorTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:text="For testing purposes, you can use '0000' as the verification code."
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:background="@drawable/card_background"
+        android:padding="12dp" />
+
+    <TextView
         android:id="@+id/VerifyResendTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/VerifyEditTextNumber"
+        android:layout_below="@+id/VerifyInstructionsTextView"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:text="Resend code in"
